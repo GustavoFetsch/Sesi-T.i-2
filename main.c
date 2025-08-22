@@ -1,17 +1,23 @@
 #include <stdio.h>
 
-int main() {
-    int numero, i;
-
-    printf("Digite um número para ver a tabuada: ");
-    scanf("%d", &numero);
-
-    printf("\nTabuada do %d:\n", numero);
-    for(i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", numero, i, numero * i);
+void main () {
+    int numeros[5];
+    
+    for(int i =0;  i < 5; i++){
+        printf("digite o valor de %d: ", i );
+        scanf("%d",  & numeros[i]);
     }
-
-    return 0;
+    
+    printf("exibindo valores d forma crescente: \n");
+    
+    for (int i=0; i  < 5; i++){
+        printf("%d\n", numeros[i]);
+    }
+    
+    printf("\n exibindovalores de forma decrescente\n");
+    
+    for (int i=4; i >=0 ; i--){
+        printf("%d\n", numeros[i]);
+    }
+    
 }
-
-
